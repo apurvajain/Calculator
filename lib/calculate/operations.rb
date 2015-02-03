@@ -32,8 +32,4 @@ class Operations
 		@value = 0
 	end
 
-  def exit
-    process.exit
-  end
-
 end

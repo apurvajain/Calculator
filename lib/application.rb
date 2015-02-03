@@ -2,12 +2,12 @@
 class Application
 
   def initialize
-    operation1 = Parser.new 
+    parser1 = Parser.new 
     print "$ "
     input = gets.chomp
     
     while input != 'exit' do 
-        puts operation1.change(input)
+        puts parser1.change(input)
         print "$ "
         input = gets.chomp
     end
