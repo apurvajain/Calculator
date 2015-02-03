@@ -2,16 +2,21 @@
 class Application
 
   def initialize
-    parser1 = Parser.new 
-    print "$ "
-    input = gets.chomp
-    
-    while input != 'exit' do 
-        puts parser1.change(input)
-        print "$ "
-        input = gets.chomp
-    end
-
+    @calci = Parser.new
   end
 
- end 
+  def start
+   print "$ "
+   input = gets.chomp
+   while input != 'exit' do
+    puts @calci.change(input)
+    print "$ "
+    input = gets.chomp
+   end
+  end
+
+  def start_test
+    input = Kernel.gets.chomp
+    @calci.change(input)
+  end
+end 

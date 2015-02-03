@@ -32,4 +32,27 @@ class Operations
 		@value = 0
 	end
 
+	def sqr(other)
+		@value = other * other
+	end
+
+	def srt(other)
+		@value = Math.sqrt(other)
+	end
+
+	def cube(other)
+		@value = other * other * other
+	end
+
+	def crt(other)
+		@value = other ** (1.0/3)
+	end
+
+	def neg(other)
+		@value = -(other)
+	end
+
+	def abs(other)
+		@value = other.abs
+	end
 end
